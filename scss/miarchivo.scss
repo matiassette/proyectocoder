@@ -1,0 +1,245 @@
+/* Variables */
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+$cool-red: #F44336;
+$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+/* SCSS*/
+#main{
+	display: flex;
+	flex: 1;
+}
+#logo{
+	background-size: all;
+	padding: 15px;
+	display: flex;
+	flex:1; 
+}
+#botellas{
+	display:block;
+	margin:auto;
+}
+
+.border{
+	text-decoration: none;
+	padding: 15px;
+	display: black;
+	font-weight: bold;
+	border-image-repeat: none;
+	border-image-width: 20px;
+	border: 1px solid black;
+	background-color: pink;
+}
+
+#grilla{
+	display: grid;
+	grid-template-areas: 
+	"nav header header"
+	"nav productos publicidad"
+	"nav servicios publicidad"
+	"nav footer footer";
+
+	grid-template-rows: 100px 1fr 1fr 75px;
+	grid-template-columns: 20% auto 15%;	
+
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+
+	height: 100vh;
+	margin: 0;
+
+}
+.movilidad{
+	transition: height 1s;
+	height: 70%;
+	width: 70%;
+
+}
+.movilidad:hover{
+	height: 10%;
+	padding: 10%;
+	background-image: linear-gradient(to right,white,#20EBED)
+}
+.img {
+	background-image: url(fotos/matii.jpg);
+	background-size: cover;
+	width: 100%;
+	height:5vh;
+	text-align: center;
+}
+.colorletra{
+	color: red;
+	text-align: center;
+	text-decoration-color: white;
+	text-shadow: 1px 1px #21E4EB
+}
+footer {
+	background-color:#1A1A1A;
+	height: 50%;
+  color: white;
+  padding: 15px;
+}
+
+.main1 { 
+  display:flex;
+  margin:0 auto;
+}
+.social{
+	/*las imágenes usadas tienen width de 48px*/
+	width:48px;
+	position:fixed;
+	top:50px;
+	right:0;
+}
+/* Extra centrado vertical*/
+.social{
+	/*border:1px solid #000;*/
+	top:50%;
+	height:205px;
+	/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+	margin-top:-100px;
+}
+a img:hover {
+    color: #fff;
+}
+a{
+	color:#BF4AB5;
+}
+aside {
+	grid-area: publicidad;
+	background-size: cover;
+	text-align: center;
+	text-decoration-color: blue; 
+}
+
+body{
+	background-color:white;
+	background-image: url(fotos/matiii.jpg);
+	background-size: cover;
+	font-weight:bold;
+	opacity:0.8;
+}
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0 30px 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: black;
+  grid-area: footer;
+}
+h1{
+	text-align: center;
+	color:white;
+}
+h2{
+	text-align: center;
+	color:red;
+}
+h3{
+	color:black;
+	text-align: center;
+}
+h4{
+	color:white;
+	text-align: left;
+}	
+h5{
+	color: #0FADE8;
+	text-align: center;
+	font: oblique bold 200% times new roman;
+}
+h6{
+	color: black;
+	text-align: center;
+	font: oblique bold 200% times new roman;
+}
+header{
+	background-image: url(fotos/mati1b.jpg);
+	top: 0px;
+	grid-area: header;
+	background-size: contain;
+	background-image: no-repeat;
+
+}
+header nav{
+	margin-left: 700px;
+	margin-right: 20px;
+	text-align: center;
+}
+header ul li a{
+	color: white;
+	text-decoration:none;  
+	text-align: center;
+	width: 40px ;
+	display: inline-block;
+	margin: 1px;
+}
+header ul {
+	list-style: none;
+	font-size: 0;
+	text-align: center;
+}
+header li{
+	display: inline-block;
+	width: 50px ;
+	position: relative;
+	font-family: "times new roman";
+	font-size: 25px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+header ul ul {
+	position: absolute;
+	display: none;
+	text-align: center;
+}
+header ul ul li{
+	display: block;
+	background-color: black;
+	width: 50px ;
+}
+
+header,footer{
+	background-color: white;
+	flex: 1;
+	padding: 1em;
+	margin: 1px;
+}
+
+nav {
+	grid-area: nav;
+}
+nav a{
+	text-decoration:none;
+	color:inherit;
+	font-size:14px;
+} 
+nav li{
+	display:inline-block;
+	width:10%;
+	padding:5px 10px;
+	background-color:#000;
+	border:1px solid #000;
+	text-align:center;
+	color:#fff;
+}
+nav li:hover{
+	background-color:grey;
+	color:#000;
+}
+p{
+	color:black;
+	font: oblique bold 100% arial black;
+	text-align: center;
+}
+section#productos {
+	grid-area: productos;
+}
+section#servicios {
+	grid-area: servicios;
+}
+
+ul{
+	margin: 0;
+	color:#0E0101;
+}
