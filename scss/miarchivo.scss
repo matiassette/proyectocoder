@@ -59,7 +59,7 @@ $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 	background-image: linear-gradient(to right,white,#20EBED)
 }
 .img {
-	background-image: url(fotos/matii.jpg);
+	background-image: url(fotos/img2.jpg);
 	background-size: cover;
 	width: 100%;
 	height:5vh;
@@ -67,6 +67,11 @@ $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 }
 .colorletra{
 	color: red;
+	text-align: center;
+	text-decoration-color: white;
+	text-shadow: 1px 1px #21E4EB
+}
+.justificacion{
 	text-align: center;
 	text-decoration-color: white;
 	text-shadow: 1px 1px #21E4EB
