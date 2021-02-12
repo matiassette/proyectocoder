@@ -2,7 +2,20 @@
 $title-font: normal 24px/1.5 'Open Sans', sans-serif;
 $cool-red: #F44336;
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+$azul: blue;
 /* SCSS*/
+body{
+	
+	background-size: cover;
+	font-weight:bold;
+	font-family: "raleway", sans-serif;
+	background-attachment: fixed;
+
+}
+section{
+	background-image: url(../fotos/viniedos/img2.jpg);
+}
+
 #main{
 	display: flex;
 	flex: 1;
@@ -76,6 +89,10 @@ $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 	text-decoration-color: white;
 	text-shadow: 1px 1px #21E4EB
 }
+.letraBlanca {
+
+	color: white;
+} 
 footer {
 	background-color:#1A1A1A;
 	height: 50%;
@@ -93,7 +110,20 @@ footer {
 	position:fixed;
 	top:50px;
 	right:0;
+}/*
+.image-fondo {
+    background-image: url("fotos/enre.jpg");
+    background-size: cover;
 }
+
+.cabecera{
+  color: #fff;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: #111 0px 0px 10px;
+}*/
 #imagenresponsiv{
 	width: 100%;
 	min-width: 0;
@@ -108,6 +138,35 @@ footer {
 	/*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
 	margin-top:-100px;
 }
+.header__titulo{
+
+	font-family: "monoton";
+	text-shadow: -5px 5px $azul;
+	font-size: 2.5em;
+	letter-spacing: 5px;
+	word-spacing: 20px;
+}
+
+@media(max-width: 768px) {
+
+	.header__titulo{
+
+        text-shadow: -1px 3px $azul;
+        font-size: 20px;
+        word-spacing: 10px;
+	}
+
+	header{
+
+		background-color: black;
+		background-image: none;
+
+		img{
+	      width: 100px;
+	      height: 100px;}
+    }
+}
+
 a img:hover {
     color: #fff;
 }
@@ -121,13 +180,7 @@ aside {
 	text-decoration-color: blue; 
 }
 
-body{
-	background-color:white;
-	background-image: url(fotos/matiii.jpg);
-	background-size: cover;
-	font-weight:bold;
-	opacity:0.8;
-}
+
 footer {
   background-color: white;
   text-align: center;
