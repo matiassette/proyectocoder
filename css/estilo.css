@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Variables */
 /* SCSS*/
 body {
@@ -7,7 +8,6 @@ body {
   background-attachment: fixed; }
 
 section {
-<<<<<<< HEAD
   background-image: url(../fotos/viniedos/img2.jpg); 
 
 
@@ -63,9 +63,6 @@ section {
   width: 100%;
   height: 5vh;
   text-align: center; }
-=======
-  background-image: url(../fotos/fondo/img1.jpg); }
->>>>>>> d0ce9f92b2d3cdef78eb001a977ef97522bdffc6
 
 .colorletra {
   color: red;
@@ -74,47 +71,207 @@ section {
   text-shadow: 1px 1px #21E4EB; }
 
 .justificacion {
-  text-align: right;
+  text-align: center;
   text-decoration-color: white;
   text-shadow: 1px 1px #21E4EB; }
 
+.letraBlanca {
+  color: white; }
+
+footer {
+  background-color: #1A1A1A;
+  height: 50%;
+  color: white;
+  padding: 15px; }
+
+.main1 {
+  display: flex;
+  margin: 0 auto; }
+
+.social {
+  /*las imágenes usadas tienen width de 48px*/
+  width: 48px;
+  position: fixed;
+  top: 50px;
+  right: 0; }
+
+/*
+.image-fondo {
+    background-image: url("fotos/enre.jpg");
+    background-size: cover;
+}
+
+.cabecera{
+  color: #fff;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: #111 0px 0px 10px;
+}*/
+#imagenresponsiv {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  text-align: center; }
+
+/* Extra centrado vertical*/
+.social {
+  /*border:1px solid #000;*/
+  top: 50%;
+  height: 205px;
+  /*para poner height 192 deberíamos haber indicado en el reset de estilos font-size:0;*/
+  margin-top: -100px; }
+
+.header__titulo {
+  font-family: "monoton";
+  text-shadow: -5px 5px blue;
+  font-size: 2.5em;
+  letter-spacing: 5px;
+  word-spacing: 20px; }
+
+@media (max-width: 768px) {
+  .header__titulo {
+    text-shadow: -1px 3px blue;
+    font-size: 20px;
+    word-spacing: 10px; }
+  header {
+    background-color: black;
+    background-image: none; }
+    header img {
+      width: 100px;
+      height: 100px; } }
+
+a img:hover {
+  color: #fff; }
+
+a {
+  color: #BF4AB5; }
+
+aside {
+  grid-area: publicidad;
+  background-size: cover;
+  text-align: center;
+  text-decoration-color: blue; }
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 10px 0 30px 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: black;
+  grid-area: footer; }
+
 h1 {
   text-align: center;
-  text-decoration: solid;
-  text-decoration-color: aqua; }
+  color: white; }
 
 h2 {
   text-align: center;
-  text-decoration: solid;
-  text-decoration-color: aqua; }
+  color: red; }
 
 h3 {
+  color: black;
+  text-align: center; }
+
+h4 {
+  color: white;
+  text-align: left; }
+
+h5 {
+  color: #0FADE8;
   text-align: center;
-  text-decoration: solid;
-  text-decoration-color: aqua; }
+  font: oblique bold 200% times new roman; }
+
+h6 {
+  color: black;
+  text-align: center;
+  font: oblique bold 200% times new roman; }
+
+header {
+  background-image: url(fotos/mati1b.jpg);
+  top: 0px;
+  grid-area: header;
+  background-size: contain;
+  background-image: no-repeat; }
+
+header nav {
+  margin-left: 700px;
+  margin-right: 20px;
+  text-align: center; }
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  width: 40px;
+  display: inline-block;
+  margin: 1px; }
+
+header ul {
+  list-style: none;
+  font-size: 0;
+  text-align: center; }
+
+header li {
+  display: inline-block;
+  width: 50px;
+  position: relative;
+  font-family: "times new roman";
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 20px; }
+
+header ul ul {
+  position: absolute;
+  display: none;
+  text-align: center; }
+
+header ul ul li {
+  display: block;
+  background-color: black;
+  width: 50px; }
+
+header, footer {
+  background-color: white;
+  flex: 1;
+  padding: 1em;
+  margin: 1px; }
+
+nav {
+  grid-area: nav; }
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px; }
+
+nav li {
+  display: inline-block;
+  width: 10%;
+  padding: 5px 10px;
+  background-color: #000;
+  border: 1px solid #000;
+  text-align: center;
+  color: #fff; }
+
+nav li:hover {
+  background-color: grey;
+  color: #000; }
 
 p {
-  background-color: aquamarine;
-  text-align: center;
-  text-decoration: bisque;
-  text-decoration: blanchedalmond; }
+  color: black;
+  font: oblique bold 100% arial black;
+  text-align: center; }
 
-footer {
-  background-color: aquamarine;
-  text-align: center;
-  text-decoration: bisque;
-  text-decoration: blanchedalmond; }
+section#productos {
+  grid-area: productos; }
 
-.caja {
-  width: 50px;
-  height: 50px;
-  background-image: linear-gradient(yellow, green);
-  transform: translate(10px, 20px);
-  transform: rotateX(70deg);
-  transition: height 10s; }
+section#servicios {
+  grid-area: servicios; }
 
-.caja:hover {
-  height: 80px;
-  width: 80px;
-  padding: 20px;
-  background-color: cyan; }
+ul {
+  margin: 0;
+  color: #0E0101; }
