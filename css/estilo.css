@@ -8,7 +8,10 @@ body {
   background-attachment: fixed; }
 
 section {
-  background-image: url(../fotos/viniedos/img2.jpg); }
+  background-image: url(../fotos/viniedos/img2.jpg); 
+
+
+}
 
 #main {
   display: flex;
