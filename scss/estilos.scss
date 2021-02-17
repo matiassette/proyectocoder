@@ -1,0 +1,72 @@
+/* Variables */
+$title-font: normal 24px/1.5 'Open Sans', sans-serif;
+$cool-red: #F44336;
+$box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+$azul: blue;
+/* SCSS*/
+body{
+	
+	background-size: cover;
+	font-weight:bold;
+	font-family: "raleway", sans-serif;
+	background-attachment: fixed;
+
+}
+section{
+	background-image: url(../fotos/fondo/img1.jpg);
+}
+.colorletra{
+	color: red;
+	text-align: center;
+	text-decoration-color: white;
+	text-shadow: 1px 1px #21E4EB
+}
+.justificacion{
+	text-align: right;
+	text-decoration-color: white;
+	text-shadow: 1px 1px #21E4EB
+}
+h1{
+	text-align: center;
+	text-decoration: solid;
+	text-decoration-color: aqua;
+}
+h2{
+	text-align: center;
+	text-decoration: solid;
+	text-decoration-color: aqua;
+}
+h3{
+	text-align: center;
+	text-decoration: solid;
+	text-decoration-color: aqua;
+}
+p{
+	background-color: aquamarine;
+	text-align: center;
+	text-decoration: bisque;
+	text-decoration: blanchedalmond;
+
+
+}
+footer{
+	background-color: aquamarine;
+	text-align: center;
+	text-decoration: bisque;
+	text-decoration: blanchedalmond;
+
+}
+.caja{
+	width: 50px;
+	height: 50px;
+	background-image: linear-gradient(yellow, green);
+	transform: translate(10px, 20px);
+	transform: rotateX(70deg);
+	transition: height 10s;
+}
+.caja:hover{
+	height: 80px;
+	width: 80px;
+	padding: 20px;
+	background-color: cyan;
+}
